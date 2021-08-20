@@ -42,7 +42,6 @@ function submitForm () {
     const email = document.getElementById("email").value
 
 
-
     if( nama === "" || 
         role === "" || 
         availability === "" || 
@@ -62,5 +61,17 @@ function submitForm () {
         document.getElementById("labelPengalaman").innerText = pengalaman
         document.getElementById("labelEmail").innerText = email
     }
+    
+    if(a==1)
+        {
+            document.getElementById("main_form").style.display="block";
+            return a=0;
+        }
+    
+    else
+        {
+            document.getElementById("main_form").style.display="none";
+            return a=1;
+        }
  
 }

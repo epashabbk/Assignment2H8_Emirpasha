@@ -43,10 +43,10 @@ nav ul li a{
   text-transform: uppercase;
 }
 
-a.active, a:hover{
+/* a.active, a:hover{
   background: #1b9bff;
   transition: .5s;
-}
+} */
 
 
 /* Body Description 1 */
@@ -149,11 +149,18 @@ body {
 }
 
 .thumb {
-  width: 280px;
-  height: 200px;
-  border-radius: 10%;
+  display: inline-block;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
   overflow: hidden;
-  margin: auto;
+}
+
+.thumb img {
+  width: auto;
+  height: 100%;
+  margin-left: -60px;
 }
 
 .btn--edit{
@@ -206,11 +213,16 @@ input {
 
 .head {
   display: block;
+  line-height: 50px;
 }
 
 .form{
   width: 100%;
   display: none;
+}
+
+::placeholder{
+  font-size: 15px;
 }
 
 #main_form {
@@ -230,11 +242,11 @@ input {
   cursor: pointer;
 }
 .btn--primary{
-  background: green;
+  background: rgb(8, 171, 8);
   color: white;
 }
 .btn--primary:hover{
-  background: rgb(14, 198, 14);
+  background: rgb(7, 135, 7);
 }
 .btn--block{
   width: 100%;
