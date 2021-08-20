@@ -27,8 +27,8 @@
             </section>
 
             <div class="data-1">
-                <h2 class="Name-Title">Emirpasha B Kisyanto</h2>
-                <p class="Job-Title">Product Designer</p>
+                <h2 class="Name-Title" id="labelNama">Emirpasha B Kisyanto</h2>
+                <p class="Job-Title" id="labelRole">Product Designer</p>
                 <button class="btn--edit" onclick="show_hide()">Edit</button>
                 <button class="btn--resume">Resume</button>
             </div>
@@ -42,11 +42,11 @@
                     <p>Email</p>
                 </div>
                 <div class="text">
-                    <p>Full Time</p>
-                    <p>29</p>
-                    <p>Jakarta</p>
-                    <p>2</p>
-                    <p>epashabbk@gmail.com</p>
+                    <p id="labelAvailability">Full Time</p>
+                    <p id="labelUsia">29</p>
+                    <p id="labelLokasi">Jakarta</p>
+                    <p id="labelPengalaman">2</p>
+                    <p id="labelEmail">epashabbk@gmail.com</p>
                 </div>
             </section>
             
@@ -64,36 +64,36 @@
         <div class="container-2" id="main_form">
             <form>
                 <label class="head">Nama</label>
-                <input type="nama" placeholder="masukkan nama anda"><br>
+                <input id="nama" placeholder="masukkan nama anda"><br>
                 <br><br>
     
                 <label>Role</label>
-                <input type="role" placeholder="apa peran anda"><br>
+                <input id="role" placeholder="apa peran anda"><br>
                 <br><br>
     
                 <label>Availability</label>
-                <input type="availability" placeholder="kapan anda tersedia"><br>
+                <input id="availability" placeholder="kapan anda tersedia"><br>
                 <br><br>
     
                 <label>Usia</label>
-                <input type="usia" placeholder="kapan anda tersedia"><br>
+                <input id="usia" placeholder="kapan anda tersedia"><br>
                 <br><br>
     
                 <label>Lokasi</label>
-                <input type="lokasi" placeholder="kapan anda tersedia"><br>
+                <input id="lokasi" placeholder="kapan anda tersedia"><br>
                 <br><br>
     
                 <label>Years Experience</label>
-                <input type="yearsexperience" placeholder="kapan anda tersedia"><br>
+                <input id="pengalaman" placeholder="kapan anda tersedia"><br>
                 <br><br>
     
                 <label>Email</label>
-                <input type="email" placeholder="kapan anda tersedia"><br>
+                <input id="email" placeholder="kapan anda tersedia"><br>
             </form>
         </div>
 
         <div class="container-3">
-            <button class="btn btn--primary btn--block">SUBMIT</button>
+            <button onclick="submitForm()" class="btn btn--primary btn--block">SUBMIT</button>
         </div>
 
         <script src="portfolio.js"></script>

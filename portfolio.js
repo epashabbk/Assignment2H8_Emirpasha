@@ -23,23 +23,44 @@ const form_fill = document.getElementById("formfill");
     });
 } 
 
+const buttonSubmit = document.getElementById("buttonSubmit");
+buttonSubmit.addEventListener("click",function(e){
+    alert("tes")
+}, false);   
 
-// document.getElementById("main_form").style.display==="none";
+function submitForm () {
 
-// var s1 = document.getElementById("section-1")
-// if (s1.style.display === "none"){
-//     s1.style.display = "block"
-// } else {
-//     s1.style.display = "none"
-// }
+    // if(document.getElementById("nama").value === "") alert("nama tidak boleh kosong")
+    // else document.getElementById("titleNama").innerText = document.getElementById("nama").value
 
-// function sayHello() {
-//     // alert("hello")
-//     // console.log("hello")
-//     var form = document.getElementById("form-section")
-//     if (form.innerHTML === "") {
-//         form.innerHTML = "container-2"
-//     } else {
-//         form.innerHTML = ""
-//     }
-// }
+    const nama = document.getElementById("nama").value
+    const role = document.getElementById("role").value
+    const availability = document.getElementById("availability").value
+    const usia = document.getElementById("usia").value
+    const lokasi = document.getElementById("lokasi").value
+    const pengalaman = document.getElementById("pengalaman").value
+    const email = document.getElementById("email").value
+
+
+
+    if( nama === "" || 
+        role === "" || 
+        availability === "" || 
+        usia === "" || 
+        lokasi === "" || 
+        pengalaman === "" ||
+        email === "" ) {
+        
+        alert("Semua data harus diisi")
+    }
+    else {
+        document.getElementById("labelNama").innerText = nama
+        document.getElementById("labelRole").innerText = role
+        document.getElementById("labelAvailability").innerText = availability
+        document.getElementById("labelUsia").innerText = usia
+        document.getElementById("labelLokasi").innerText = lokasi
+        document.getElementById("labelPengalaman").innerText = pengalaman
+        document.getElementById("labelEmail").innerText = email
+    }
+ 
+}
